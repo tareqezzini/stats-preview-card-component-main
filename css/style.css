@@ -1,0 +1,113 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.card
+{
+    background-color: hsl(244, 38%, 16%);
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+}
+
+.card .info
+{
+    margin: 3rem;
+}
+.card .info h1
+{
+    color: hsl(0, 0%, 100%);
+    font-size: 2.5rem;
+}
+.card .info h1 span
+{
+    color: hsl(277, 64%, 61%);
+}
+.card .info p
+{
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-size: 1rem;
+    margin-top: 2rem ;
+    width: 80%;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+}
+.card .state
+{
+    margin-top: 3rem;
+    gap: 8rem;
+    display: flex;
+}
+.card .state h2
+{
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.card .state span
+{
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color:  hsla(0, 0%, 100%, 0.75);
+}
+.card .image-sec
+{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+.card .image-sec img
+{
+    width: 100%;
+    height: 100%;
+}
+.card .image-sec::before
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 99%, 49%, 0.527);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@media (max-width:767px) 
+{
+    .card
+    {
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+    .card  .info
+    {
+        text-align: center;
+    }
+    .card  .info h1
+    {
+        font-size: 1.5rem;
+    }
+    .card  .info p
+    {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .card .state
+    {
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+}
